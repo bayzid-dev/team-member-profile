@@ -1,0 +1,86 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-team-member-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+
+  &.is-style-list {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+
+    .team-member-image {
+      flex-shrink: 0;
+    }
+
+    .team-member-content {
+      flex: 1;
+    }
+  }
+
+  &.is-style-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &.is-style-minimal {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .team-member-image {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      width: 160px;
+      border-radius: 4px;
+    }
+  }
+
+  .team-member-content {
+    .team-member-name {
+      margin: 0;
+      padding: 0;
+    }
+
+    .team-member-socials {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+  .team-edit-button {
+    button.components-button {
+      backdrop-filter: blur(16px) saturate(180%);
+      background: #ffffffbf !important;
+      height: 32px;
+      /* padding: 10px 7px !important; */
+      border-radius: 4px;
+    }
+
+    .team-edit-button {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+    }
+
+  }
+
+
+
+
+}
